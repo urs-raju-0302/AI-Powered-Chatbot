@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Chatbot</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="app">
+        <section class="chat-card">
+            <header>
+                <div>
+                    <p class="tag">AI SUPPORT ASSISTANT</p>
+                    <h1>AI-Powered Chatbot</h1>
+                    <p class="subtitle">Ask about passwords, pricing, refunds, or support.</p>
+                </div>
+                <span class="status">● Online</span>
+            </header>
+
+            <div id="messages" class="messages">
+                <div class="message bot">
+                    <span class="label">Bot</span>
+                    <p>Hello! 👋 How can I help you today?</p>
+                </div>
+            </div>
+
+            <form id="chat-form">
+                <input id="message-input" type="text"
+                       placeholder="Type your message..."
+                       autocomplete="off" required>
+                <button type="submit">Send</button>
+            </form>
+
+            <div class="quick-actions">
+                <button data-message="I forgot my password">Password help</button>
+                <button data-message="What are your prices?">Pricing</button>
+                <button data-message="I need a refund">Refund</button>
+                <button data-message="I need customer support">Support</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+</html>
